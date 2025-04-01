@@ -1,0 +1,79 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o corpo da página */
+body {
+    background-color: #1A1A1A; /* Fundo preto profundo */
+    font-family: 'Cinzel', serif; /* Fonte medieval pros títulos */
+    color: #CCCCCC; /* Cor padrão do texto em cinza claro */
+}
+
+/* Estilizando o header */
+header {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 10px; /* Espaço interno */
+    background-color: #333333; /* Cinza escuro pra destacar o topo */
+    border-bottom: 2px solid #4A0E0E; /* Borda inferior vermelho sangue */
+}
+
+/* Títulos do header */
+header h1 {
+    color: #D4A017; /* Dourado claro */
+    font-size: 2.5em; /* Tamanho grande */
+    text-shadow: 2px 2px 4px #000000; /* Sombra pra dar profundidade */
+}
+
+/* Estilizando o main */
+main {
+    padding: 20px; /* Espaço interno */
+    text-align: center; /* Centraliza tudo */
+}
+
+/* Texto de boas-vindas */
+main h3 {
+    color: #B8860B;
+    font-family: 'MedievalSharp', cursive; /* Fonte manuscrita */
+    margin: 20px 0; /* Espaço acima e abaixo */
+}
+
+/* Linhas horizontais */
+hr {
+    border: none; /* Remove o estilo padrão */
+    height: 2px; /* Altura da linha */
+    background-color: #4A0E0E; /* Vermelho sangue */
+    margin: 20px auto; /* Centraliza e dá espaço */
+    width: 80%; /* Largura ajustada */
+}
+
+/* Seção das classes */
+.classes h1 {
+    color: #B8860B; /* Dourado escuro */
+    font-size: 2em; /* Tamanho médio */
+    margin: 30px 0; /* Espaço maior */
+}
+
+/* Títulos das classes */
+.classes h2 {
+    color: #B8860B;
+    font-size: 1.5em; /* Tamanho menor */
+    margin: 15px 0; /* Espaço entre elementos */
+}
+
+/* Estilizando as imagens */
+.classes img {
+    width: 30%; /* Largura relativa */
+    max-width: 200px; /* Limite máximo pra não crescer demais */
+    border: 3px solid #4A0E0E; /* Borda roxa escura */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s ease; /* Animação suave */
+}
+
+/* Efeito ao passar o mouse nas imagens */
+.classes img:hover {
+    transform: scale(1.1); /* Aumenta um pouco */
+    box-shadow: 0 0 15px #700303; /* Brilho roxo */
+}
