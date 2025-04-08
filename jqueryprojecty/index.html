@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste tabela</title>
+    <style>
+        #topo{
+            background-color: gray;
+            margin-top: 1cm;
+            margin-left: 2cm;
+            margin-right: 2cm;
+            margin-bottom: 0.5cm;
+            color: black;
+            border-radius: 10px;
+            h1{
+                text-align: center; color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        }
+
+        #menu{
+            text-align: center;
+            background-color: gray;
+            margin-top: 1cm;
+            margin-left: 2cm;
+            margin-right: 2cm;
+            margin-bottom: 0.5cm;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            color: black;
+            border-radius: 10px;
+        
+
+        a:link, a:visited{
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a:hover{
+            background-color: white;
+            color: gray;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+        #conteudo{
+            background-color: white;
+            margin-top: 1cm;
+            margin-left: 2cm;
+            margin-right: 2cm;
+            margin-bottom: 1cm;
+            padding-top: 1%;
+            padding-left: 1%;
+            padding-right: 1%;
+            padding-bottom: 1%;
+        }
+
+        
+
+            
+        
+    
+    </style>
+
+    <script type="text/javascript"src="js/jquery.js"></script>
+    <script>
+        function carregar(pagina)
+        {
+            $("#conteudo").load(pagina);
+        }
+    </script>
+</head>
+<body>
+    <div id="topo">
+    <h1>Seja bem vindo</h1>
+
+    </div>
+
+
+    <div id="menu">
+        
+        <a href="javascript:carregar('home.html')">Home</a>
+        &nbsp; &nbsp;  &nbsp; &nbsp;
+
+        <a href="javascript:carregar('tabela.html')">Tabela</a>
+        &nbsp; &nbsp;  &nbsp; &nbsp;
+
+        <a href="javascript:carregar('formulario.html')">Form</a>
+        &nbsp; &nbsp;  &nbsp; &nbsp;
+
+        <a href="javascript:carregar('canvas.html')">Canva</a>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+         
+    </div>
+
+    
+    <div id="conteudo">
+
+        <script>
+            carregar('home.html');
+        </script>
+
+    </div>
+
+
+    <div id="rodape">
+        Todos os direitos renovados
+
+    </div>
+    
+</body>
+</html>
