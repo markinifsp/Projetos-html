@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste tabela</title>
+    <style>
+        body {
+            background: url(img/background.jpeg) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        #topo, #menu, #conteudo, #rodape {
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1.5rem;
+            text-align: center;
+        }
+        #topo h1 {
+            margin: 0;
+            text-decoration: underline;
+        }
+        #menu a {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        #menu a:hover {
+            background: #fff;
+            color: #555;
+            border: 1px solid #555;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+        function carregar(pagina) {
+            $("#conteudo").load(pagina);
+        }
+    </script>
+</head>
+<body>
+
+    <div id="topo">
+        <h1>Seja bem-vindo</h1>
+    </div>
+
+    <div id="menu">
+        <a href="javascript:carregar('home.html')">Home</a>
+        <a href="javascript:carregar('tabela.html')">Tabela</a>
+        <a href="javascript:carregar('formulario.html')">Formulário</a>
+        <a href="javascript:carregar('canvas.html')">Canvas</a>
+        <a href="javascript:carregar('formulario2.html')">Cadastro</a>
+    </div>
+
+    <div id="conteudo">
+        <script>carregar('home.html');</script>
+    </div>
+
+    <div id="rodape">
+        <small>Todos os direitos reservados</small>
+    </div>
+
+</body>
+</html>
